@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
 
 export const NotFoundPageContainer = styled.div`
   display: flex;
@@ -14,63 +13,38 @@ export const Title = styled.h2`
 
 export const Image = styled.img`
   max-width: 100%;
+  border-radius: 4px;
 `;
 
-export const StyledLink = styled(Link)`
+export const Button = styled.button`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  width: 100%;
-  max-width: 248px;
-  padding: 11px 0 12px 14px;
-  text-align: center;
-  color: #fff;
+  padding: 8px 28px;
+  margin: 24px 0 40px 0;
+  width: 248px;
+  height: 40px;
   background: #54adff;
   border: 1px solid #54adff;
   border-radius: 40px;
-  margin: 24px 0 40px 0;
+  color: #fef9f9;
   transform: scale(1);
-  transition: transform 0.5s;
+  transition: transform 0.3s;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   cursor: pointer;
+  gap: 12px;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
 
   &:hover,
   &:focus {
     transform: scale(1.05);
-    transition: transform 0.5s;
+    transition: transform 0.3s;
   }
-
   &:hover:before {
     left: 100%;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent
-    );
-    transition: all 650ms;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: auto;
-    transform: none;
-    transition: none;
-  }
-
-  &:disabled:before {
-    transform: none;
-    transition: none;
   }
 `;
