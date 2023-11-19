@@ -32,7 +32,7 @@ const AppRoutes = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
-            <Route index element={<MainPage />} />
+            <Route path="main" element={<MainPage />} />
             <Route path="notices" element={<NoticesPage />} />
             <Route path="friends" element={<OurFriendsPage />} />
             <Route element={<PublicRoute />}>

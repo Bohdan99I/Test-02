@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 export const NotFoundPageContainer = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ export const Image = styled.img`
   border-radius: 4px;
 `;
 
-export const Button = styled.button`
+export const StyledLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
