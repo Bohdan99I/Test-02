@@ -3,12 +3,12 @@ import {
   Title,
   Image,  
 } from "./NotFoundPage.styles";
-import pageError from "../../images/404/404_desktop@1x.png";
+import pageError from "../../images/404/404_desktop@2x.png";
 
 export const NotFoundPage = () => {
   return (
     <NotFoundPageContainer>
-      <Title>Ooops! This page not found :(</Title>
+      <Title>Ooops! This page not found :( </Title>
       <Image src={pageError} alt="" />     
     </NotFoundPageContainer>
   );
